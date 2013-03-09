@@ -1,3 +1,4 @@
-if [ -f ~/bash_aliases/.bash_aliases ]; then
-    source ~/bash_aliases/.bash_aliases
+SOURCE_PATH=~/bash_extensions/bash_aliases/.bash_aliases
+if [ -f $SOURCE_PATH ]; then
+    source $SOURCE_PATH
 fi
