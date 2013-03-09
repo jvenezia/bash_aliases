@@ -5,8 +5,8 @@ alias mv='mv -i'
 
 # Add some easy shortcuts for formatted directory listings and
 alias df='df -h'
-alias ll='ls -larthF --color=auto'
-alias ls='ls -aF --color=auto'
+alias ll='ls -larthF'
+alias ls='ls -aF'
 
 # Git
 alias gc='git add . && git commit -am'
