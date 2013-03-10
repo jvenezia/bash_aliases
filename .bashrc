@@ -16,6 +16,11 @@ alias df='df -h'
 alias ll="ls -larthF $color_option"
 alias ls="ls -aF $color_option"
 
+# Grep
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
 # Git
 alias gc='git add . && git commit -am'
 
