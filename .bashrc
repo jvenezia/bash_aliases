@@ -22,7 +22,16 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Git
-alias gc='git add . && git commit -am'
+alias gac='git add . && git commit -am'
+alias gc='gac'
+alias gst='git status'
+alias gtr='git log --pretty=oneline --abbrev-commit --graph'
+alias gbd='git branch -D'
+alias gcb='git checkout -b'
+alias glp='git log -p'
+alias grh='git reset --hard'
+alias grs='git reset --soft'
+alias gpu='git push'
 
 # Rails
 alias be='bundle exec'
