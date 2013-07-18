@@ -25,7 +25,7 @@ alias egrep='egrep --color=auto'
 alias gac='git add . && git commit -am'
 alias gc='gac'
 alias gst='git status'
-alias gtr='git log --pretty=oneline --abbrev-commit --graph'
+alias gtr='git log --graph --all --format=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)" --abbrev-commit --date=relative'
 alias gbd='git branch -D'
 alias gcb='git checkout -b'
 alias glp='git log -p'
@@ -41,3 +41,8 @@ alias vi='vim'
 
 # Other
 alias mkdir='mkdir -pv'
+dg_with_param()
+{
+    dig -x $1 @224.0.0.251 -p 5353
+}
+alias dg=dg_with_param
